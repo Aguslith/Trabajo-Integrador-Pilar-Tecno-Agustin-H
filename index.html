@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Puse en español como el tutorial indicaba -->
+<head>
+    <meta charset="UTF-8"> <!-- sirve para mostrar caracteres especiales, como las eñes y tildes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Recetario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <header> <!-- el header sirve para agrupar contenido como el título y el subtítulo -->
+            <h1>🍳 Mi app de recetas</h1>
+            <p>🔽Guarda aquí tus recetas🔽</p>
+        </header>
+        
+        <main>
+            <section class="formulario-receta"> <!-- Section sirve para agrupar el contenido -->
+                <form id="formularioReceta">
+                    <input type="text" id="nombreReceta" placeholder="Nombre de la receta" required>
+                    <input type="text" id="ingredientesReceta" placeholder="Ingredientes (separados por comas)">
+                    <button type="submit">Agregar Receta</button>
+                </form>
+            </section>
+            
+            <section class="lista-recetas">
+                <div id="contenedorRecetas">
+                    <!-- Las recetas aparecerán aquí -->
+                </div>
+                <div class="estadisticas">
+                    <p id="totalRecetas">Total recetas: 0</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

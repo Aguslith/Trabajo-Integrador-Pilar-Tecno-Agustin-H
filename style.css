@@ -1,0 +1,85 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.contenedor {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Flexbox para el diseño */
+.formulario-receta, .lista-recetas, #formularioReceta {
+    display: flex;
+    flex-direction: column;
+}
+
+#formularioReceta {
+    gap: 10px;
+}
+
+/* Estilos de campos de texto y botón */
+input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+/* Estilos de las tarjetas de recetas */
+.tarjeta-receta {
+    background: #fff9e6;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border-left: 5px solid #ffcc00;
+}
+
+.tarjeta-receta h3 {
+    margin-top: 0;
+    color: #e65100;
+}
+
+.tarjeta-receta p {
+    margin-bottom: 5px;
+}
+
+.boton-eliminar {
+    background: #f44336;
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+
+.boton-eliminar:hover {
+    background: #d32f2f;
+}
+
+.estadisticas {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
